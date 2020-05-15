@@ -1,7 +1,7 @@
 // Write your Character component here
-import React, {useState} from 'react'
+// import React, {useState} from 'react'
 
 
 
 
-export default Character;
+// export default Character;
