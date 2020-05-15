@@ -1,10 +1,13 @@
 import React, {useState} from 'react'
 
 const CharacterInfo=props=>{
+    const characterData=event =>{
+        props.getCharacter();
+    }//end characterData
 
     return(
         <div>
-            <h1>Hello</h1>
+            <button onClick={characterData}>Random Character</button>
            
         </div>
     )//end of return

@@ -14,7 +14,7 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
   const getCharacter=()=>{
-    const URL="http swapi.py4e.com/api/planets/1/"
+    const URL="http swapi.py4e.com/api/planets"
     //console.log('testing')
     axios
     .get(URL)
