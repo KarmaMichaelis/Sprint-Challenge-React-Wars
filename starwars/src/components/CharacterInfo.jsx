@@ -3,4 +3,4 @@ import React, {useState} from 'react'
 
 
 
-export default Character;
+export default CharacterInfo;
