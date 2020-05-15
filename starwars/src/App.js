@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import Character from './components/CharacterInfo';
 import axios from 'axios'
+import CharacterInfo from './components/CharacterInfo.jsx';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -26,7 +27,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">StarWars Trivia</h1>
 
-      
+      <CharacterInfo getCharacter={getCharacter}/>
     </div>
   );
 }
