@@ -7,7 +7,7 @@ const CharacterInfo=props=>{
 
     return(
         <div>
-            
+            {props.CharacterInfo}
                 <button onClick={characterData}>Random Character</button>
           
            
