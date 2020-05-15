@@ -4,4 +4,4 @@ import React, {useState} from 'react'
 
 
 
-export default CharacterData.js
+export default Character;
