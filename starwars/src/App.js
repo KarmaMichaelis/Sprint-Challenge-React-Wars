@@ -33,7 +33,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">StarWars Trivia</h1>
 
-      <CharacterInfo getCharacter={getCharacter} setCharacter={setCharacter}/>
+      <CharacterInfo getCharacter={getCharacter} />
     </div>
   );
 }
