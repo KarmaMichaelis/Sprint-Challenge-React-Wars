@@ -7,7 +7,7 @@ import CharacterInfo from './components/CharacterInfo.jsx';
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
-  const [isCharacter, setCharacter]=useState('react')
+  const [isCharacter, setCharacter]=useState(false)
 
   
   // Fetch characters from the API in an effect hook. Remember, anytime you have a 
@@ -16,10 +16,16 @@ const App = () => {
   const getCharacter=()=>{
     const URL="https://swapi.py4e.com/api/people/"
     //console.log('testing')
+    setCharacter(true)
+   
     axios
     .get(URL)
-    .then()
-    .catch()
+    .then(response=>{
+      console.log(response.data)
+    })
+    .catch(error=>{
+      console.log('unable to connect to character card')
+    })
      //console.log('testing')
   };
 
@@ -27,7 +33,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">StarWars Trivia</h1>
 
-      <CharacterInfo getCharacter={getCharacter}/>
+      <CharacterInfo getCharacter={getCharacter} setCharacter={setCharacter}/>
     </div>
   );
 }

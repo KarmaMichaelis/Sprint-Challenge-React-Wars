@@ -6,12 +6,13 @@ const CharacterInfo=props=>{
     }//end characterData
 
     return(
-        <div>
-            {props.CharacterInfo}
-                <button onClick={characterData}>Random Character</button>
+       <div>
+           
+           <button>{characterData}Random Character</button> 
+         
           
            
-        </div>
+        </div>//end of first div
     )//end of return
  
 }//end of characterInfo
